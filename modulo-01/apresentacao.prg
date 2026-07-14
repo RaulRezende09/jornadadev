@@ -1,9 +1,13 @@
 FUNCTION Main()
+    LOCAL cNome := "Raul Rezende"
+    LOCAL cCidade := "Sao Paulo"
+    LOCAL cCurso := "Harbour/ADVPL"
+
     QOut("=================================")
     QOut("===== FICHA DE APRESENTA€AO =====")
     QOut("=================================")
-    QOut("Nome: Raul Rezende")
-    QOut("Cidade: Sao Paulo")
-    QOut("Curso: Harbour/ADVPL")
+    QOut("Nome: " + cNome)
+    QOut("Cidade: " + cCidade)
+    QOut("Curso: " + cCurso)
 
 RETURN NIL
