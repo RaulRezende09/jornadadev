@@ -1,4 +1,5 @@
 FUNCTION Main()
+    // Declaração de variáveis
     LOCAL cNome:= "Raul Rezende"
     LOCAL dNasc := CTOD("09/19/1920")
     LOCAL nPreco := 100.0
@@ -6,6 +7,7 @@ FUNCTION Main()
     LOCAL nDesconto
     LOCAL nTotal
 
+    // Cálculo do desconto para idosos
     IF nIdade > 60
         nDesconto := nPreco * 0.125
         nTotal := nPreco - nDesconto
@@ -14,6 +16,7 @@ FUNCTION Main()
         nTotal := nPreco
     ENDIF
 
+    // Exibição do resumo da compra
     QOut("================================")
     QOut("======= RESUMO DA COMPRA =======")
     QOut("================================")

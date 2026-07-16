@@ -1,4 +1,5 @@
 FUNCTION Main()
+    // Declaração de variáveis
     LOCAL cFuncionario := "Raul Rezende"
     LOCAL nSalario := 2500.00
     LOCAL lStatus := .T.
