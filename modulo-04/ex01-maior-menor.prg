@@ -1,5 +1,11 @@
 FUNCTION Main()
-    LOCAL nValor1 := 25, nValor2 := 20
+    LOCAL nValor1, nValor2
+
+    // Solicita ao usuário que digite dois valores
+    ACCEPT "Digite o primeiro valor: " TO nValor1
+    ACCEPT "Digite o segundo valor: " TO nValor2
+    nValor1 := Val(nValor1)
+    nValor2 := Val(nValor2)
 
     // Verifica se os valores são iguais
     IF nValor1 == nValor2

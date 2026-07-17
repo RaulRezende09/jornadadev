@@ -1,7 +1,13 @@
 FUNCTION Main()
-    LOCAL nIdade := 30
-    LOCAL nDependentes := 2
+    LOCAL nIdade
+    LOCAL nDependentes
     LOCAL nValorPlano
+
+    // Solicita ao usuário a idade e o número de dependentes
+    ACCEPT "Digite a idade do funcionario: " TO nIdade
+    ACCEPT "Digite o numero de dependentes: " TO nDependentes
+    nIdade := Val(nIdade)
+    nDependentes := Val(nDependentes)
 
     IF nIdade <= 25
         nValorPlano := 180

@@ -1,8 +1,15 @@
 FUNCTION Main()
-    LOCAL nA := 10.0
-    LOCAL nB := 5.0
-    LOCAL cOperacao := "/" // Operação a ser realizada: +, -, *, /, ^, R
+    LOCAL nA
+    LOCAL nB
+    LOCAL cOperacao
     LOCAL nResultado
+
+    // Solicita ao usuário a operação e os números
+    ACCEPT "Digite a operacao (+, -, *, /, ^, R): " TO cOperacao
+    ACCEPT "Digite o primeiro numero: " TO nA
+    ACCEPT "Digite o segundo numero: " TO nB
+    nA := Val(nA)
+    nB := Val(nB)
 
     DO CASE
         CASE cOperacao == "+"

@@ -1,6 +1,10 @@
 FUNCTION Main()
-    LOCAL nMes := 9 // Numero do mês (1 a 12)
+    LOCAL nMes
     LOCAL cNomeMes
+
+    // Solicita ao usuário que digite o número do mês
+    ACCEPT "Digite o numero do mes: (1-12) " TO nMes
+    nMes := Val(nMes)
 
     DO CASE
         CASE nMes == 1

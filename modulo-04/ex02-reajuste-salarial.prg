@@ -1,6 +1,9 @@
 FUNCTION Main()
-    LOCAL nSalarioAtual := 2500.00
-    LOCAL nNovoSalario
+    LOCAL nSalarioAtual, nNovoSalario
+
+    // Solicita ao usuário que digite o salário atual
+    ACCEPT "Digite o salario atual: " TO nSalarioAtual
+    nSalarioAtual := Val(nSalarioAtual)
 
     // Verifica a faixa salarial e aplica o reajuste correspondente
     IF nSalarioAtual < 1000.00
