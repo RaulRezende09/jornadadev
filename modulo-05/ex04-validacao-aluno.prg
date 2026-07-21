@@ -15,42 +15,42 @@ FUNCTION Main()
         IF Len(Trim(cNome)) > 0
             EXIT // Nome válido
         ELSE
-            QOUT("Nome inválido. Tente novamente.")
+            QOUT("Nome invalido. Tente novamente.")
         ENDIF
     ENDDO
 
     // Validação da disciplina
     DO WHILE .T.
-        ACCEPT "Digite a disciplina (3 letras maiúsculas): " TO cDisc
+        ACCEPT "Digite a disciplina (3 letras maiusculas): " TO cDisc
         IF Len(cDisc) == 3 .AND. cDisc == Upper(cDisc)
             EXIT // Disciplina válida
         ELSE
-            QOUT("Disciplina inválida. Tente novamente.")
+            QOUT("Disciplina invalida. Tente novamente.")
         ENDIF
     ENDDO
 
     // Validação da primeira nota
     DO WHILE .T.
         ACCEPT "Digite a primeira nota (0 a 10): " TO nNota1
-        IF nNota1 >= 0 .AND. nNota1 <= 10
+        IF val(nNota1) >= 0 .AND. val(nNota1) <= 10
             EXIT // Nota válida
         ELSE
-            QOUT("Nota inválida. Tente novamente.")
+            QOUT("Nota invalida. Tente novamente.")
         ENDIF
     ENDDO
 
     // Validação da segunda nota
     DO WHILE .T.
         ACCEPT "Digite a segunda nota (0 a 10): " TO nNota2
-        IF nNota2 >= 0 .AND. nNota2 <= 10
+        IF val(nNota2) >= 0 .AND. val(nNota2) <= 10
             EXIT // Nota válida
         ELSE
-            QOUT("Nota inválida. Tente novamente.")
+            QOUT("Nota invalida. Tente novamente.")
         ENDIF
     ENDDO
 
     // Cálculo da média das notas
-    nMedia := (nNota1 + nNota2) / 2
+    nMedia := (val(nNota1) + val(nNota2)) / 2
 
     // Exibição dos dados e da média
     QOUT("Dados do aluno:")
@@ -58,5 +58,5 @@ FUNCTION Main()
     QOUT("Disciplina:", cDisc)
     QOUT("Nota 1:", nNota1)
     QOUT("Nota 2:", nNota2)
-    QOUT("Média:", nMedia)
+    QOUT("Media:", nMedia)
 RETURN NIL

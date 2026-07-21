@@ -11,16 +11,16 @@ FUNCTION Main()
         ACCEPT "Digite um valor inteiro (0 para sair): " TO nValor
 
         // Verifica se o valor é zero
-        IF nValor == 0
+        IF val(nValor) == 0
             EXIT // Sai do loop
         ENDIF
 
         // Atualiza o acumulador e o contador
-        nTotal := nTotal + nValor
+        nTotal := nTotal + val(nValor)
         nQtd := nQtd + 1
     ENDDO
 
     // Exibe os resultados
-    QOUT("A soma total dos valores é:", nTotal)
-    QOUT("A quantidade de valores somados é:", nQtd)
+    QOUT("Soma total dos valores =", nTotal)
+    QOUT("Quantidade de valores somados =", nQtd)
 RETURN NIL

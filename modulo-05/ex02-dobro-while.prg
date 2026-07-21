@@ -11,11 +11,11 @@ FUNCTION Main()
         ACCEPT "Digite um valor inteiro (0 ou negativo para sair): " TO valor
 
         // Verifica se o valor é zero ou negativo
-        IF valor <= 0
+        IF val(valor) <= 0
             EXIT // Sai do loop
         ENDIF
 
         // Exibe o dobro do valor lido
-        QOUT ( "O dobro de", valor, "é", valor * 2 )
+        QOUT ( "Dobro de", valor, "=>", val(valor) * 2 )
     ENDDO
 RETURN NIL
